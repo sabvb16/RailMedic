@@ -1,0 +1,41 @@
+.aid-grid { display: flex; flex-direction: column; gap: 12px; }
+.aid-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+}
+.aid-card-top {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px; cursor: pointer; transition: background .15s;
+}
+.aid-card-top:hover { background: #fafaf8; }
+.aid-icon {
+  width: 46px; height: 46px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; flex-shrink: 0;
+}
+.aid-info { flex: 1; }
+.aid-title { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; }
+.aid-sub   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.aid-sev   { font-size: 10px; font-weight: 800; letter-spacing: 1px; flex-shrink: 0; }
+.aid-toggle { color: var(--muted); font-size: 12px; flex-shrink: 0; }
+
+.aid-steps { padding: 16px; background: #fafaf8; border-top: 1px solid var(--border); }
+.aid-step  { display: flex; gap: 10px; margin-bottom: 12px; font-size: 13px; line-height: 1.6; }
+.aid-step:last-of-type { margin-bottom: 0; }
+.step-num  {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--ink); color: #fff; font-size: 11px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.step-text { flex: 1; }
+.aid-warn {
+  background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px;
+  padding: 8px 12px; font-size: 12px; color: #92400e;
+  margin-top: 10px; font-weight: 600;
+}
+.aid-disclaimer {
+  margin-top: 12px; font-size: 11px; color: var(--muted);
+  background: #f8fafc; border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px;
+}

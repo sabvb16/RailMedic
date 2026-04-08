@@ -1,0 +1,13 @@
+{
+  "short_name": "RailMedic",
+  "name": "RailMedic — On-Train Medical Assistant",
+  "description": "Emergency medical assistant for Indian Railways passengers",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#d62828",
+  "background_color": "#f5f3ee",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "64x64", "type": "image/x-icon" }
+  ]
+}

@@ -1,0 +1,48 @@
+.track-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow);
+}
+.track-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.track-name   { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 800; }
+.track-num    { font-size: 12px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; margin-top: 3px; }
+.delay-badge  { background: #fef3c7; color: #92400e; font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 20px; }
+.track-meta   { display: flex; gap: 16px; font-size: 13px; color: var(--muted); font-weight: 600; margin-bottom: 20px; flex-wrap: wrap; }
+
+.station-track { position: relative; padding: 8px 0; }
+.track-line    { position: absolute; left: 14px; top: 20px; bottom: 20px; width: 2px; background: var(--border); }
+.track-line-fill { position: absolute; left: 14px; top: 20px; width: 2px; background: var(--green2); transition: height .8s ease; }
+.stop-row { display: flex; align-items: center; gap: 12px; padding: 6px 0; position: relative; z-index: 1; }
+.stop-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  border: 2px solid var(--border); background: #fff;
+  flex-shrink: 0; margin-left: 9px; transition: all .3s;
+}
+.stop-dot.passed  { background: var(--green2); border-color: var(--green2); }
+.stop-dot.current {
+  background: var(--yellow); border-color: var(--orange);
+  width: 16px; height: 16px; margin-left: 7px;
+  box-shadow: 0 0 0 4px rgba(247,127,0,.2);
+  animation: currentPulse 1.5s ease infinite;
+}
+@keyframes currentPulse {
+  0%,100% { box-shadow: 0 0 0 4px rgba(247,127,0,.2); }
+  50%     { box-shadow: 0 0 0 8px rgba(247,127,0,.05); }
+}
+.stop-info  { display: flex; justify-content: space-between; flex: 1; align-items: center; }
+.stop-name  { font-size: 13px; font-weight: 700; }
+.stop-time  { font-size: 11px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+.stop-tag   { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-left: 6px; }
+.current-tag { background: #fef3c7; color: #92400e; }
+.next-tag    { background: #dbeafe; color: #1e40af; }
+
+.med-stops { display: flex; flex-direction: column; gap: 10px; }
+.med-stop-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 12px; padding: 14px;
+  display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow);
+}
+.med-stop-card.onboard { border-color: #bae6fd; background: #f0f9ff; }
+.med-stop-icon { font-size: 22px; flex-shrink: 0; }
+.med-stop-info { flex: 1; }
+.med-stop-name { font-size: 13px; font-weight: 700; }
+.med-stop-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
